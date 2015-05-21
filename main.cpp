@@ -11,12 +11,30 @@ required library: json encoder & decoder
 
 typedef std::string string;
 
+/*
+  This Zermelo API class was developed by JulianvDoorn, 2015
+  This project does not have any connections/is related to Zermelo itself!
+ 
+  It contains all methods you can use to easily start your own app development
+*/
 class ZermeloAPI {
+	/*
+	  The school to use by the API
+	*/
+	
 	protected:
 		string school;
 		
+	/*
+	  Using HTTPS or not
+	*/
+	
 	private:
 		bool secure;
+	
+	/*
+	  Construct a new Zermelo instance, by any given school
+	*/
 	
 	public:
 		void ZermeloAPI(string& school, bool secure = false) {
